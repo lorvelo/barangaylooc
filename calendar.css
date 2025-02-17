@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.month-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.day {
+    padding: 20px;
+    background: #f0e68c; /* Light yellow background for the day */
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition:  0.3s; /* Smooth transition for hover effect */
+}
+
+.day:hover {
+    background: #e6db5c; /* Darker yellow on hover */
+}
+
+.day.selected {
+    background: #007bff; /* Blue background for selected day */
+    color: white;
+}
+
+.status-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
